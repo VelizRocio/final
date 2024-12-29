@@ -1,0 +1,222 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F8EDE3;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    line-height: 1.6;
+    text-align: center; 
+}
+
+header {
+    background-color: #DFD3C3;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    margin: 0 25px;
+    text-decoration: none;
+    color: #C5705D;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #A24B48;
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 30px 0;
+    color: #C5705D;
+}
+
+.contacto {
+    background-image: url('imp.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    padding: 40px; 
+    color: #000; 
+}
+
+.formulario-container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 500px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 15px 0 5px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #C5705D;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+    color: #000;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #A24B48;
+    outline: none;
+}
+
+form textarea {
+    height: 120px; 
+}
+
+button {
+    background-color: #C5705D;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #A24B48;
+    transform: translateY(-2px);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #DFD3C3;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-text {
+    color: #FFB996;
+}
+
+.productos {
+    padding: 40px;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.producto {
+    background-color: #FFFFFF; 
+    border: 1px solid #C5705D; 
+    border-radius: 10px;
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    width: 180px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    max-width: 120px; 
+    cursor: pointer; 
+}
+
+.cantidad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.carrito {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.2rem;
+}
+
+.subtitulo {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    color: #C5705D;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); 
+    align-items: center;
+    justify-content: center;
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.modal-toggle {
+    display: none;
+}
+
+.modal-toggle:checked + label + .modal {
+    display: flex; 
+}
+
+.cerrar {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.producto {
+    padding: 10px;
+}
+
+.galeria {
+    margin: 0 auto;
+}
+
+.contacto {
+    padding: 40px;
+}
+
+.formulario-container {
+    margin: 30px auto; 
+}
+.descripcion-box {
+    text-align: center; 
+    font-style: italic; 
+    padding: 20px; 
+    margin: 20px auto; 
+    max-width: 800px; 
+    border: 2px solid #C5705D; 
+    background-color: #F8EDE3; 
+    border-radius: 10px; 
+}
